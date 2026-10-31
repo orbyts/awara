@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "recipe_version": "0.1.0",
+  "resolve_10_bit_viewer": true,
+  "resolve_mac_display_profiles": true,
+  "display": "Apple Pro Display XDR",
+  "reference_mode": "HDR Video (P3-ST 2084)",
+  "automatic_brightness": false,
+  "true_tone": false,
+  "note": "Display preset does not change delivery primaries. Screenshots are not HDR measurement."
+}

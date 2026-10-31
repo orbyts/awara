@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "recipe_version": "0.1.0",
+  "project_output": "Rec.2100 HLG",
+  "mastering_nits": 1000,
+  "cst": {
+    "input_space": "DaVinci Wide Gamut",
+    "input_gamma": "DaVinci Intermediate",
+    "output_space": "Rec.2100",
+    "output_gamma": "Rec.2100 HLG",
+    "tone_mapping": "None",
+    "gamut_mapping": "None",
+    "hdr_standard_conversions": true,
+    "hdr_203_nits_diffuse_white": true,
+    "white_point_adaptation": true
+  },
+  "render": {
+    "format": "QuickTime",
+    "codec": "H.265",
+    "profile": "Main10",
+    "data_levels": "Video",
+    "color_tag": "Rec.2020",
+    "gamma_tag": "Rec.2100 HLG",
+    "use_proxies": false,
+    "use_cache": false
+  },
+  "status": "Action 6 local test; None tone mapping is a tested creative choice, not a universal safe output preset. Instagram validation pending"
+}

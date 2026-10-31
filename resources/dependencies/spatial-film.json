@@ -1,0 +1,8 @@
+{
+  "id": "spatial-film",
+  "name": "Spatial Film",
+  "url": "https://spatial.film/resolve/guide/",
+  "tested_version": "1.3.2",
+  "instructions": "Install vendor plugin and OSV Converter; restart Resolve. No payload redistributed.",
+  "redistribute_payload": false
+}

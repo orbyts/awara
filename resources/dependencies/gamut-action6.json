@@ -1,0 +1,8 @@
+{
+  "id": "gamut-action6",
+  "name": "Gamut Action 6 BaseLUTs",
+  "url": "https://gamut.io/product/baseluts-for-dji-osmo-action-6/",
+  "tested_version": "1.0",
+  "instructions": "Purchased camera-specific DWG LUT. Keep original vendor file private; install renamed copy under DJI.",
+  "redistribute_payload": false
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "recipe_version": "0.1.0",
+  "project_output": "Rec.2100 ST2084",
+  "mastering_nits": 1000,
+  "cst": {
+    "input_space": "DaVinci Wide Gamut",
+    "input_gamma": "DaVinci Intermediate",
+    "output_space": "Rec.2020",
+    "output_gamma": "ST2084",
+    "tone_mapping": "DaVinci",
+    "custom_max_input": false,
+    "custom_max_output_nits": 1000,
+    "adaptation": 9,
+    "gamut_mapping": "None",
+    "hdr_standard_conversions": true,
+    "hdr_203_nits_diffuse_white": true,
+    "white_point_adaptation": true
+  },
+  "render": {
+    "format": "QuickTime",
+    "codec": "H.265",
+    "profile": "Main10",
+    "data_levels": "Video",
+    "color_tag": "Rec.2020",
+    "gamma_tag": "ST2084",
+    "use_proxies": false,
+    "use_cache": false
+  },
+  "status": "Local playback accepted; HDR10 static metadata and platform upload pending"
+}

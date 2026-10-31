@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "folders": [
+    "manifests",
+    "workspace/resolve",
+    "workspace/intermediates",
+    "masters",
+    "deliveries"
+  ],
+  "variables": [
+    "project_name",
+    "originals_root",
+    "projects_root",
+    "local_cache_root"
+  ],
+  "note": "Declarative design; Kestreel Awara template adapter pending. Keep live Resolve library local or managed; export DRP snapshots into workspace/resolve."
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "url",
+    "tested_version",
+    "instructions",
+    "redistribute_payload"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "tested_version": {
+      "type": "string"
+    },
+    "instructions": {
+      "type": "string"
+    },
+    "redistribute_payload": {
+      "const": false
+    }
+  }
+}

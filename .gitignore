@@ -6,3 +6,6 @@ node_modules/
 target/
 *.tgz
 .DS_Store
+
+# Personal licensed assets; never distribute or publish.
+/awara-private/

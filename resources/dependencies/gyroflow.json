@@ -1,0 +1,8 @@
+{
+  "id": "gyroflow",
+  "name": "Gyroflow OFX",
+  "url": "https://github.com/gyroflow/gyroflow-plugins",
+  "tested_version": "2.1.1",
+  "instructions": "Install OFX and compatible Gyroflow app; inspect gyro and lens profile before grading.",
+  "redistribute_payload": false
+}

@@ -35,3 +35,12 @@ Awara describes reusable application workflows. Kairo owns device identities/cap
 The canonical schema lives in `schemas/recipe.schema.json`; package copies must match. Shared contract fixtures test all three implementations. Schema version 1 is experimental and may evolve before a stable release.
 
 MIT licensed.
+
+
+## Workflow catalog
+
+Start with [manual Resolve setup](docs/getting-started/manual-setup.md) or the [versioned recipe](recipes/resolve-multicamera-hdr/recipe.json). Awara owns configurations and accompanying manual guides/PDFs. Kestreel owns ingestion and project scaffolding; Kairo owns device identity and capture presets. Awara-driven automatic application is under development.
+
+Personal purchases live in `awara-private/`, ignored by Git. Never force-add that directory. Public dependencies are links, not licensed payloads. Preserve vendor originals; installation may use descriptive aliases.
+
+[Current manual reference PDF](output/pdf/awara-resolve-manual-reference.pdf) accompanies the manual setup. Rebuild it with `uv run --with reportlab python scripts/build_reference.py`. Historical lab guides remain under docs/workflows; screenshot review for the public illustrated edition is pending.

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "resolve-multicamera-hdr",
+  "version": "0.1.0",
+  "description": "Manual YRGB camera normalization, shared DWG/I grading and separate PQ/HLG deliveries. Catalog configuration; automatic application is not yet implemented.",
+  "application": {
+    "id": "resolve",
+    "settings": {
+      "config_files": [
+        "applications/resolve/color-management/manual-dwg.json",
+        "applications/resolve/delivery/pq.json",
+        "applications/resolve/delivery/hlg.json",
+        "applications/resolve/monitoring/mac-xdr.json",
+        "sources/cameras/dji/action6/profile.json",
+        "sources/cameras/dji/osmo360/profile.json"
+      ],
+      "dependencies": [
+        "gamut-action6",
+        "spatial-film",
+        "gyroflow"
+      ],
+      "template": "templates/video/template.json",
+      "manual": "docs/getting-started/manual-setup.md"
+    }
+  },
+  "steps": [
+    {
+      "id": "ingest",
+      "mode": "manual",
+      "description": "Preserve originals and verify copied bytes; retain companion metadata."
+    },
+    {
+      "id": "project",
+      "mode": "manual",
+      "description": "Create project folders and Resolve project; apply manual-dwg configuration."
+    },
+    {
+      "id": "input",
+      "mode": "manual",
+      "description": "Apply camera-specific geometry and input transform exactly once."
+    },
+    {
+      "id": "grade",
+      "mode": "manual",
+      "description": "Balance and grade in DWG/Intermediate."
+    },
+    {
+      "id": "delivery",
+      "mode": "manual",
+      "description": "Select PQ or HLG output transform and matching project/export declarations."
+    },
+    {
+      "id": "verify",
+      "mode": "manual",
+      "description": "Render from source and verify tags, decode, playback and framing."
+    }
+  ]
+}

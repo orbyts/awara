@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "recipe_version": "0.1.0",
+  "id": "dji-osmo360",
+  "input": "D-Log M OSV",
+  "dependency": "spatial-film",
+  "effect": "Spatial Film DJI 360 Reframe",
+  "output": "DaVinci Wide Gamut / DaVinci Intermediate",
+  "settings": {
+    "perspective": "Free View",
+    "rocksteady": true,
+    "horizon_leveling": true,
+    "seam_refinement": true,
+    "seam_blend": "DJI Default (slower)",
+    "optical_flow_stitching": false,
+    "hide_mount": "Auto (measured per clip)",
+    "lens_accessory": "Auto (as recorded)",
+    "proxy": false,
+    "preset": "Wide",
+    "lens_curve": 50,
+    "zoom": 85
+  },
+  "validation": "Downloaded original Osmo 360 sample; local PQ static and animated export accepted. Own-camera field test pending."
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "recipe_version": "0.1.0",
+  "id": "dji-action6",
+  "input": "D-Log M",
+  "output": "DaVinci Wide Gamut / DaVinci Intermediate",
+  "dependency": "gamut-action6",
+  "installed_lut": "DJI/DJI_Action6_DLogM_to_DWG_Intermediate.cube",
+  "geometry": {
+    "dependency": "gyroflow",
+    "capture": "Wide + RockSteady off",
+    "smoothness": 50,
+    "zoom_limit": 130,
+    "lens_correction": 100,
+    "horizon_lock": 0,
+    "fov": 1,
+    "integration": "Use loaded camera quaternions when present; None was observed in test"
+  },
+  "validation": "Visual acceptance only; inspect gyro and lens metadata for every recording mode. Ultra Wide test lacked parsed orientation/lens data."
+}

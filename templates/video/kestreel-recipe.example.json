@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "assets": [],
+  "awara_recipe": {
+    "id": "resolve-multicamera-hdr",
+    "version": "0.1.0"
+  },
+  "note": "Kestreel asset-binding recipe, distinct from Awara schema. Empty assets intentionally. Does not configure Resolve."
+}

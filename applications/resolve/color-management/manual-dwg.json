@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "recipe_version": "0.1.0",
+  "color_science": "DaVinci YRGB",
+  "timeline_color_space": "DaVinci WG/Intermediate",
+  "project_input_lut": null,
+  "project_output_lut": null,
+  "monitor_lut": null,
+  "lut_interpolation": "Tetrahedral",
+  "input_conversion": "Camera-specific LUT or plugin, exactly once",
+  "output_conversion": "One final CST per delivery",
+  "automation_status": "manual; Resolve adapter pending"
+}
