@@ -44,3 +44,5 @@ Start with [manual Resolve setup](docs/getting-started/manual-setup.md) or the [
 Personal purchases live in `awara-private/`, ignored by Git. Never force-add that directory. Public dependencies are links, not licensed payloads. Preserve vendor originals; installation may use descriptive aliases.
 
 [Current manual reference PDF](output/pdf/awara-resolve-manual-reference.pdf) accompanies the manual setup. Rebuild it with `uv run --with reportlab python scripts/build_reference.py`. Historical lab guides remain under docs/workflows; screenshot review for the public illustrated edition is pending.
+
+Kestreel development now supports [recipe-driven folder and manifest scaffolding](docs/getting-started/kestreel-setup.md). Applying settings to Resolve remains pending.
