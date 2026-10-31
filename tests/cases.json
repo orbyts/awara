@@ -1,0 +1,122 @@
+[
+  {
+    "name": "valid",
+    "valid": true,
+    "recipe": {
+      "schema_version": 1,
+      "id": "resolve-manual-dwg",
+      "version": "0.1.0",
+      "description": "Illustrative manual setup; validation does not apply or verify application settings.",
+      "application": {
+        "id": "davinci-resolve",
+        "settings": {
+          "color_science": "DaVinci YRGB",
+          "timeline_color_space": "DaVinci WG/Intermediate"
+        }
+      },
+      "steps": [
+        {
+          "id": "configure-working-space",
+          "mode": "manual",
+          "description": "Set DaVinci YRGB and DaVinci WG/Intermediate in Project Settings. Camera input and delivery transforms must be configured separately."
+        }
+      ]
+    }
+  },
+  {
+    "name": "empty",
+    "valid": false,
+    "recipe": {}
+  },
+  {
+    "name": "unknown-field",
+    "valid": false,
+    "recipe": {
+      "schema_version": 1,
+      "id": "resolve-manual-dwg",
+      "version": "0.1.0",
+      "description": "Illustrative manual setup; validation does not apply or verify application settings.",
+      "application": {
+        "id": "davinci-resolve",
+        "settings": {
+          "color_science": "DaVinci YRGB",
+          "timeline_color_space": "DaVinci WG/Intermediate"
+        }
+      },
+      "steps": [
+        {
+          "id": "configure-working-space",
+          "mode": "manual",
+          "description": "Set DaVinci YRGB and DaVinci WG/Intermediate in Project Settings. Camera input and delivery transforms must be configured separately."
+        }
+      ],
+      "surprise": true
+    }
+  },
+  {
+    "name": "wrong-version",
+    "valid": false,
+    "recipe": {
+      "schema_version": 2,
+      "id": "resolve-manual-dwg",
+      "version": "0.1.0",
+      "description": "Illustrative manual setup; validation does not apply or verify application settings.",
+      "application": {
+        "id": "davinci-resolve",
+        "settings": {
+          "color_science": "DaVinci YRGB",
+          "timeline_color_space": "DaVinci WG/Intermediate"
+        }
+      },
+      "steps": [
+        {
+          "id": "configure-working-space",
+          "mode": "manual",
+          "description": "Set DaVinci YRGB and DaVinci WG/Intermediate in Project Settings. Camera input and delivery transforms must be configured separately."
+        }
+      ]
+    }
+  },
+  {
+    "name": "empty-steps",
+    "valid": false,
+    "recipe": {
+      "schema_version": 1,
+      "id": "resolve-manual-dwg",
+      "version": "0.1.0",
+      "description": "Illustrative manual setup; validation does not apply or verify application settings.",
+      "application": {
+        "id": "davinci-resolve",
+        "settings": {
+          "color_science": "DaVinci YRGB",
+          "timeline_color_space": "DaVinci WG/Intermediate"
+        }
+      },
+      "steps": []
+    }
+  },
+  {
+    "name": "bad-mode",
+    "valid": false,
+    "recipe": {
+      "schema_version": 1,
+      "id": "resolve-manual-dwg",
+      "version": "0.1.0",
+      "description": "Illustrative manual setup; validation does not apply or verify application settings.",
+      "application": {
+        "id": "davinci-resolve",
+        "settings": {
+          "color_science": "DaVinci YRGB",
+          "timeline_color_space": "DaVinci WG/Intermediate"
+        }
+      },
+      "steps": [
+        {
+          "id": "x",
+          "mode": "magic",
+          "description": "x"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,12 @@
+[package]
+name = "awara"
+version = "0.0.0"
+edition = "2021"
+description = "Portable creative workflow recipe schema and validator"
+license = "MIT"
+repository = "https://github.com/orbyts/awara"
+readme = "README.md"
+include = ["src/**", "recipe.schema.json", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE"]
+[dependencies]
+serde_json = "1"
+jsonschema = { version = "0.33", default-features = false }

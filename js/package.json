@@ -1,0 +1,35 @@
+{
+  "name": "awara",
+  "version": "0.0.0",
+  "description": "Portable creative workflow recipe schema and validator",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orbyts/awara.git",
+    "directory": "js"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./schema": "./recipe.schema.json"
+  },
+  "bin": {
+    "awara": "./cli.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "recipe.schema.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "ajv": "^8.17.1"
+  },
+  "scripts": {
+    "test": "node --test test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
