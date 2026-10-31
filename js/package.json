@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/orbyts/awara.git",
+    "url": "git+https://github.com/orbyts/awara.git",
     "directory": "js"
   },
   "exports": {
@@ -14,7 +14,7 @@
     "./schema": "./recipe.schema.json"
   },
   "bin": {
-    "awara": "./cli.js"
+    "awara": "cli.js"
   },
   "files": [
     "index.js",
