@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "tested_resolve_version": "21.1.2.10",
+  "settings": {
+    "colorScienceMode": "davinciYRGB",
+    "separateColorSpaceAndGamma": "0",
+    "colorSpaceTimeline": "DaVinci WG/Intermediate",
+    "colorSpaceOutput": "Rec.2100 ST2084",
+    "hdrMasteringOn": "1",
+    "hdrMasteringLuminanceMax": "1000",
+    "timelineResolutionWidth": "3840",
+    "timelineResolutionHeight": "2160",
+    "timelineFrameRate": "29.97"
+  },
+  "timeline": "01 HDR assembly - transforms pending",
+  "import_extensions": [
+    ".mp4",
+    ".mov",
+    ".mxf",
+    ".wav",
+    ".tif",
+    ".tiff",
+    ".exr",
+    ".png",
+    ".jpg"
+  ],
+  "manual_steps": [
+    "Prepare and verify the Osmo 360 MP4 twin using Spatial Film OSV Converter.",
+    "Apply Spatial Film or Gyroflow and verify motion/lens data.",
+    "Assign the licensed Action 6 input LUT exactly once.",
+    "Build and verify grading nodes and the final PQ output CST. Project declarations do not transform pixels.",
+    "Set LUT interpolation to Tetrahedral and verify project/monitor LUT slots are empty.",
+    "Configure monitoring and export settings; verify render and HDR metadata."
+  ],
+  "note": "Foundation only: empty timeline and media pool imports. Mixed 59.94/29.97 sources are retained at native rates; timeline is 29.97. No grade, output CST, OFX, render, proxy, or Cloud setup is automated."
+}
