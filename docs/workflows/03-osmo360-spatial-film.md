@@ -11,7 +11,7 @@ original OSV
 
 Selected route | Spatial Film 1.3.2 + Resolve Studio 21.1.2
 
-This is the main Osmo 360 workflow. DJI Studio served as a comparison reference; it is not an intermediate-render requirement for this selected route. OpenOSV remains in guide 06 only.
+This is the main Osmo 360 workflow. DJI Studio served as a comparison reference; it is not an intermediate-render requirement for this selected route.
 
 1. Install the signed Spatial Film Immersive Utility package and its OSV Converter. Restart Resolve after installing so it can scan the OFX plugin.
 2. Keep the downloaded or camera-original OSV untouched. Use the converter to create its MP4 twin under the project workspace/spatial-film-source folder.
@@ -107,6 +107,6 @@ Keep the source OSV, MP4 twin, manifests, screenshots, plugin version record, li
 
 A final render compresses the processed image once from the original source path. Optional proxies/caches do not alter the originals, but their use at export must be deliberate. Screenshots in this guide are UI evidence, not reference HDR images.
 
-> The main path is Spatial Film. No OpenOSV adapter or DJI Studio Rec.709 export is used as the HDR input. HLG, proxy tuning and a mixed-camera timeline remain separate validation tasks.
+> The main path is Spatial Film. A DJI Studio Rec.709 export is not used as the HDR input. HLG, proxy tuning and a mixed-camera timeline remain separate validation tasks.
 
 - [Spatial Film: official control reference](https://spatial.film/resolve/guide/)

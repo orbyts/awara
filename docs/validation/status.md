@@ -4,4 +4,4 @@
 
 Manual guides and JSON describe the intended same configuration. Kestreel currently scaffolds folders and asset references; automatic Awara-driven Resolve setup is pending. Do not label all settings automated until a supported API or tested adapter applies and reads them back.
 
-OpenOSV is retained only as an alternate historical reference. It is not required by the main recipe.
+Retired experiments are kept in private recovery archives, outside the current workflow.

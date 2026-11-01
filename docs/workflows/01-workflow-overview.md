@@ -84,6 +84,6 @@ Read the evidence before reusing the recipe
 
 ### Guide map
 
-02: Action 6 input. 03: Osmo 360 source, stabilization and animation. 04: nodes and multicamera assembly. 05: monitoring, export and checks. 06: OpenOSV reference only.
+02: Action 6 input. 03: Osmo 360 source, stabilization and animation. 04: nodes and multicamera assembly. 05: monitoring, export and checks.
 
 > A visual match is useful workflow evidence. It does not prove scene-linear response, maximum retained dynamic range, chart accuracy, calibration or all-camera equivalence. Use the same tested versions when reproducing this lab.

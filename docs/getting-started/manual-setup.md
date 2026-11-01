@@ -44,3 +44,14 @@ Inspect exported metadata and decode the whole file; compare playback on a suita
 
 ## Acceptance and portability
 Record source hashes, dependency versions, recipe commit, actual settings and deviations in manifests. Save the project and export a fresh .drp. Reopen it and check media/plugin/LUT availability. Repeat on another machine before claiming portability. Keep paid assets in your own private storage; each user obtains their dependencies from the vendors.
+
+
+## Project library and thumbnail housekeeping
+
+Kestreel can list Resolve projects and export explicitly selected projects before removing their library entries. Private recovery exports may contain licensed LUTs and stills; do not publish them. Original media remains in its ingest location.
+
+To refresh a project preview: open the Project Manager using the Home button, right-click the project tile, and choose **Update Thumbnails**. This refreshes Resolve-generated previews; it is not an arbitrary cover-image upload. The installed Resolve 21.1 scripting SDK has no documented project-thumbnail setter, so Kestreel does not automate a custom cover.
+
+Reference: Blackmagic Design, DaVinci Resolve 18 Beginner's Guide, Project Manager contextual menu: https://documents.blackmagicdesign.com/UserManuals/DaVinci-Resolve-18-Beginners-Guide.pdf
+
+If a missing-plugin warning appears after exporting a retired test project, dismiss it and open the active sample explicitly. Do not reinstall retired plugins merely to suppress an old project's warning. If the warning repeats when loading the active sample, inspect that project's effects and nested timelines before changing it. The Awara sample export inspected on 2026-11-01 contained no retired generator identifier.
