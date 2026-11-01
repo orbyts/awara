@@ -71,3 +71,7 @@ Saved project: `Action6_Gyroflow_HLG_comparison_v03.drp`. Active timeline: `02 W
 User selected **Wide + RockSteady off** as the intended Action 6 default for post stabilization. Ultra Wide/off is excluded from the gyro-based recipe: Gyroflow parsed neither orientation samples nor a lens profile in that take, consistent with its documented DJI mode requirements. Preserve the RockSteady-on baseline as a comparison, not the intended default. No confirmation of hardware reconfiguration has been received. Bicycle-mounted motion validation remains pending.
 
 Next camera checkpoint: Osmo 360 projection/dewarp. Preserve the accepted Spatial Film recipe and compare only projection/lens-curve controls, holding pan/tilt/roll/zoom, color and stabilization constant. Distinguish straight-line correction, edge stretching and usable framing from RockSteady/Horizon Leveling. Do not add a second generic dewarp. Follow with save/reopen and source-path verification. Original sample tests do not establish real-world cycling capture or endurance.
+
+## Vertical timeline follow-up — 2026-11-01
+
+Enabling **Use vertical resolution** was observed to switch mismatched-resolution scaling to **Scale full frame with crop**. For Gyroflow, restore **Scale entire image to fit** after choosing orientation and verify it after timeline creation. See the [current manual setup and before/after screenshots](../getting-started/manual-setup.md#gyroflow-recheck-scaling-after-selecting-vertical-resolution). This is separate from the frame-rate mismatch check.

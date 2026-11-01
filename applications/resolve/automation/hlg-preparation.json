@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "tested_resolve_version": "21.1.2.10",
+  "settings": {
+    "colorScienceMode": "davinciYRGB",
+    "separateColorSpaceAndGamma": "0",
+    "colorSpaceTimeline": "DaVinci WG/Intermediate",
+    "colorSpaceOutput": "Rec.2100 HLG",
+    "hdrMasteringOn": "1",
+    "hdrMasteringLuminanceMax": "1000",
+    "timelineResolutionWidth": "3840",
+    "timelineResolutionHeight": "2160",
+    "timelineFrameRate": "23.976",
+    "timelineInputResMismatchBehavior": "scaleToFit"
+  },
+  "timeline": "01 HDR assembly - transforms pending",
+  "import_extensions": [
+    ".mp4",
+    ".mov",
+    ".mxf",
+    ".wav",
+    ".tif",
+    ".tiff",
+    ".exr",
+    ".png",
+    ".jpg"
+  ],
+  "manual_steps": [
+    "Prepare and verify the Osmo 360 MP4 twin using Spatial Film OSV Converter.",
+    "Apply Spatial Film or Gyroflow and verify motion/lens data.",
+    "Assign the licensed Action 6 input LUT exactly once.",
+    "Build and verify grading nodes and the final HLG output CST. Project declarations do not transform pixels.",
+    "Set LUT interpolation to Tetrahedral and verify project/monitor LUT slots are empty.",
+    "Configure monitoring and export settings; verify render and HDR metadata."
+  ],
+  "note": "Empty source-rate preparation timelines and independent editorial default. Plugins, grades, media placement and cross-timeline inheritance are manual; no intermediate renders.",
+  "preparation_timelines": [
+    {
+      "asset": "action6-wide-off",
+      "name": "PREP - Action 6 - Gyroflow - 59.94"
+    },
+    {
+      "asset": "osmo360-online-sample",
+      "name": "PREP - Osmo 360 - Spatial Film - 29.97",
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "create_editorial_timeline": true
+}

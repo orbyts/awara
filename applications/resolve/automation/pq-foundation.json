@@ -32,5 +32,5 @@
     "Set LUT interpolation to Tetrahedral and verify project/monitor LUT slots are empty.",
     "Configure monitoring and export settings; verify render and HDR metadata."
   ],
-  "note": "Foundation only: empty timeline and media pool imports. Mixed 59.94/29.97 sources are retained at native rates; timeline is 29.97. No grade, output CST, OFX, render, proxy, or Cloud setup is automated."
+  "note": "Project declarations do not apply pixel transforms. Configure source preparation separately."
 }
